@@ -19,16 +19,15 @@ let userEmail = prompt ('Inserisci la tua email per verificare che sia in lista'
 
 // console.log(userEmail);
 
+let risultatoEmail = 'questa email non è presente';
+
 for (let i = 0 ; i < email.length ; i++ ) {
 
     // console.log( email[i] );
 
-
     if ( email[i] === userEmail ) {
-        console.log('Email già presente')
-    } else {
-        console.log('Email non presente')
-    }
-
-
+        risultatoEmail = 'questa email è già presente';
+    } 
 }
+
+console.log(risultatoEmail);
